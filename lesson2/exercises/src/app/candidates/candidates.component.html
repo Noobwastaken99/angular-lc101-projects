@@ -1,5 +1,5 @@
 <div class="container">
-    <h2 class="centered">Mission Name: {{missionName}}</h2>
+    <h2 class="centered" *ngIf = "!editMissionName; else editMission" (click)="editMissionName = true" (keyup.enter)="changeMissionName(missionName); missionName = ''">Mission Name: {{missionName}}</h2>
     <br>
     <div class="row justify-content-center">
         <div class="candidates col-3">
@@ -39,7 +39,7 @@
     <div class = 'centered'>
         <button (click)="selected = false">Clear Data & Image</button><br>
         <!-- Add a "Send on Mission" button here. -->
-        <button (click)="addToCrew(selected)">Send on Mission</button>
+        <button *ngIf="selected && !crew.includes(selected) && crew.length < 3" (click)="addToCrew(selected)">Send on Mission</button>
     </div>
 </div>
 

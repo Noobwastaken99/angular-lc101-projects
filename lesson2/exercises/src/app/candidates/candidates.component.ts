@@ -24,6 +24,11 @@ export class CandidatesComponent implements OnInit {
     }
   }
 
+  changeMissionName (newName: string) {
+    this.missionName = newName;
+    let editMissionName = false;
+  }
+
   constructor() { }
 
   ngOnInit() {
