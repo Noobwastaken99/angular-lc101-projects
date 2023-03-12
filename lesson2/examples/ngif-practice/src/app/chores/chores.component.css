@@ -6,6 +6,10 @@
     color: #3c79b8;
 }
 
+.iceCream {
+    color: green;
+}
+
 h3 {
     text-align: center;
 }
@@ -15,4 +19,8 @@ img {
     height: auto;
     display: block;
     margin: auto;
+}
+
+p {
+    color: rgb(0, 255, 13);
 }
