@@ -53,9 +53,9 @@ export class AppComponent {
       this.color = 'orange';
     } else if (parseInt(rocketImage.style.left) > 235) {
       this.color = 'orange';
-    } else if (parseInt(rocketImage.style.bottom) < 0) {
-      this.color = 'orange';
     } else if (parseInt(rocketImage.style.bottom) > 240) {
+      this.color = 'orange';
+    } else if (parseInt(rocketImage.style.bottom) < 0) {
       this.color = 'orange';
     } else {
       this.color = 'blue';
